@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>方块冒险 1-1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="panel">
+      <div class="header">
+        <div>
+          <h1>方块冒险 1-1</h1>
+          <p>纯 HTML / CSS / JavaScript Canvas 横版平台小游戏</p>
+        </div>
+        <button id="restartButton" type="button">重新开始</button>
+      </div>
+
+      <canvas id="gameCanvas" width="960" height="540" aria-label="方块横版平台游戏画布"></canvas>
+
+      <div class="help">
+        <span>移动：A/D 或 方向键</span>
+        <span>跳跃：W / ↑ / 空格</span>
+        <span>手柄：十字键/左摇杆移动，A 键跳跃</span>
+        <span>重开：R</span>
+      </div>
+      <div id="gamepadStatus" class="gamepad-status" aria-live="polite">手柄：等待连接</div>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
